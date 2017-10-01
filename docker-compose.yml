@@ -1,0 +1,11 @@
+version: '2'
+services:
+  dol-sandbox:
+  build: ./
+#  restart: always
+  environment:
+   DOL_SANDBOX_ALL_PLAYERS_ADMIN: 1
+  ports:
+   - "10300:10300/tcp"
+   - "10400:10400/udp"
+
